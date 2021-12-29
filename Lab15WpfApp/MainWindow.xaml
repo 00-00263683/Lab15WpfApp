@@ -1,0 +1,217 @@
+﻿<Window x:Class="Lab15WpfApp.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab15WpfApp"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="1200">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Menu Grid.Row="0" Margin="5">
+            <MenuItem Header="Файл" BorderBrush="#FFB88383" Margin="3">
+                <MenuItem Header="Открыть" Checked="MenuItem_Click"/>
+                <MenuItem Header="Сохранить" Click="MenuItem_Click1"/>
+                <Separator/>
+                <MenuItem Header="Очистить" Click="MenuItem_Click2"/>
+            </MenuItem>
+        </Menu>
+        <FlowDocumentScrollViewer Grid.Row="1" x:Name="docViewer">
+            <FlowDocument>
+                <Paragraph TextAlignment="Center" FontSize="40" FontFamily="Stencil">
+                    <Hyperlink NavigateUri="https://www.hyundai.ru/NewSonata" FontWeight="Bold">Hyundai Sonata</Hyperlink>
+
+                </Paragraph>
+                <Paragraph>
+                    <Floater Width="200" HorizontalAlignment="Left">
+                        <BlockUIContainer>
+                            <Image Source="Data/1.jpg"/>
+                        </BlockUIContainer>
+                    </Floater>
+                    <Bold>Eighth generation (DN8; 2019)</Bold>
+                </Paragraph>
+                <Paragraph>
+                    The 2020 Sonata was previewed in early March 2019 and officially launched on March 21 in South Korea.[72] It was also debuted during the 2019 Shanghai Auto Show for the Chinese market and made its North American debut at the 2019 New York International Auto Show on April 17 for the North American market.The eighth-generation Sonata uses a new third-generation architecture and showcases Hyundai's latest "Sensuous Sportiness" design language which was first previewed by the Le Fil Rouge concept. The styling is less conservative and more pronounced compared to the previous generation. It now sports a fastback-like shape and features driving lights which run all the way up the hood and full-width, C-shaped taillamps. The interior has been redesigned significantly as well, with an optional 12.3-inch digital cluster and 10.3-inch centre screen.
+                </Paragraph>
+                <Paragraph Margin="30">
+                    <Underline>
+                        <Italic>Engine Gasoline:</Italic>
+                    </Underline>
+                </Paragraph>
+                <Section FontStyle="Italic">
+                    <List>
+                        <ListItem>
+                            <Paragraph>
+                                1.5 L Smartstream G1.5 T-GDi I4
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                1.6 L Smartstream G1.6 T-GDi I4
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                2.0 L Smartstream G2.0 MPi/T-GDi I4
+                            </Paragraph>
+                        </ListItem>
+                        <ListItem>
+                            <Paragraph>
+                                <Run Foreground="Red" >2.5 L Smartstream G2.5 MPi/GDi/T-GDi I4</Run>
+                            </Paragraph>
+                        </ListItem>
+                    </List>
+                </Section>
+                <Table>
+                    <Table.Columns>
+                        <TableColumn Width="0.5*"/>
+                        <TableColumn Width="0.5*"/>
+                        <TableColumn Width="*"/>
+                    </Table.Columns>
+                    <TableRowGroup>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">
+                                    Model
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">
+                                    Transmission
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph FontWeight="Bold">
+                                    Power
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G1.5 T-GDI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    7-speed DCT
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    170 PS (125 kW; 168 hp) @ 5,500 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G1.6 T-GDI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    8-speed automatic
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    180 PS (132 kW; 178 hp) @ 5,500 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G2.0 T-GDI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    8-speed automatic
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    240 PS (177 kW; 237 hp) @ 6,000 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G2.0 MPI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    6-speed automatic
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    152 PS (112 kW; 150 hp) @ 6,200 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G2.5 MPI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    6-speed automatic
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    180 PS (132 kW; 178 hp) @ 6,000 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    Smartstream G2.5 GDI
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    8-speed automatic
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    194 PS (143 kW; 191 hp) @ 6,100 rpm
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                        <TableRow>
+                            <TableCell>
+                                <Paragraph>
+                                    <Span Foreground="Red" FontFamily="Goudy Old Style">Smartstream G2.5 T-GDI</Span>
+
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Span Foreground="Red" FontFamily="Goudy Old Style">8-speed dual-clutch automatic</Span>
+                                </Paragraph>
+                            </TableCell>
+                            <TableCell>
+                                <Paragraph>
+                                    <Span Foreground="Red" FontFamily="Goudy Old Style">290 PS (213 kW; 286 hp) @ 5,800 rpm</Span>
+                                </Paragraph>
+                            </TableCell>
+                        </TableRow>
+                    </TableRowGroup>
+                </Table>
+            </FlowDocument>
+        </FlowDocumentScrollViewer>
+    </Grid>
+</Window>
